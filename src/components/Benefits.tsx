@@ -1,47 +1,48 @@
 import { motion } from "framer-motion";
-import { FaLeaf, FaSnowflake, FaHeart, FaAward, FaSeedling, FaCheckCircle } from "react-icons/fa";
+import { FaRegCheckCircle } from "react-icons/fa";
+import { FaLeaf, FaSnowflake, FaHeart, FaAward, FaBoxesStacked } from "react-icons/fa6";
 
 const Benefits = () => {
   const data = [
     {
-      icon: <FaLeaf />,
-      title: "Natural Quality",
-      desc: "Menggunakan jagung manis pilihan berkualitas premium dengan rasa alami yang lezat.",
+      icon: <FaBoxesStacked />,
+      title: "Complete Product Supply",
+      desc: "Menyediakan berbagai produk frozen food dan bahan pangan berkualitas untuk kebutuhan retail, horeca, dan bisnis kuliner.",
       color: "text-green-500",
       bg: "bg-green-100",
     },
     {
       icon: <FaSnowflake />,
-      title: "Frozen Fresh",
-      desc: "Teknologi frozen modern menjaga kesegaran, nutrisi, dan tekstur tetap optimal.",
+      title: "Frozen Distribution",
+      desc: "Didukung sistem distribusi dan penyimpanan modern untuk menjaga kualitas dan kesegaran produk tetap optimal.",
       color: "text-blue-500",
       bg: "bg-blue-100",
     },
     {
       icon: <FaHeart />,
-      title: "Healthy Food",
-      desc: "Cocok untuk kebutuhan keluarga modern dengan kualitas pangan terpercaya.",
+      title: "Customer Satisfaction",
+      desc: "Berkomitmen memberikan pelayanan terbaik dan menjaga kepuasan pelanggan dalam setiap distribusi produk.",
       color: "text-red-500",
       bg: "bg-red-100",
     },
     {
       icon: <FaAward />,
-      title: "Premium Product",
-      desc: "Diproduksi oleh PT Tiga Putra Permata dengan standar kualitas terbaik.",
+      title: "Premium Quality",
+      desc: "Seluruh produk dipilih dan didistribusikan dengan standar kualitas terbaik untuk memenuhi kebutuhan pasar modern.",
       color: "text-orange-500",
       bg: "bg-orange-100",
     },
     {
-      icon: <FaSeedling />,
-      title: "Fresh Ingredient",
-      desc: "Dipilih langsung dari bahan baku jagung segar dan berkualitas tinggi.",
+      icon: <FaLeaf />,
+      title: "Fresh & Hygienic",
+      desc: "Produk diproses dan disimpan secara higienis untuk menjaga kualitas, rasa, dan kesegaran tetap terjamin.",
       color: "text-emerald-500",
       bg: "bg-emerald-100",
     },
     {
-      icon: <FaCheckCircle />,
-      title: "Trusted Quality",
-      desc: "Produk higienis, aman, halal, dan terpercaya untuk berbagai kebutuhan.",
+      icon: <FaRegCheckCircle />,
+      title: "Trusted Company",
+      desc: "PT Tiga Putra Permata dipercaya sebagai partner distribusi makanan untuk berbagai kebutuhan bisnis dan industri kuliner.",
       color: "text-yellow-500",
       bg: "bg-yellow-100",
     },
@@ -66,7 +67,7 @@ const Benefits = () => {
           </h2>
 
           <p className="text-gray-600 text-lg leading-relaxed max-w-3xl mx-auto mt-8">
-            PT Tiga Putra Permata menghadirkan Jagung Manis Pipil Marsya dengan kualitas premium, proses higienis, dan teknologi modern untuk memberikan produk terbaik bagi konsumen.
+            PT Tiga Putra Permata hadir sebagai perusahaan distribusi makanan terpercaya dengan komitmen menghadirkan produk berkualitas, pelayanan profesional, dan sistem distribusi modern untuk memenuhi kebutuhan bisnis Anda.
           </p>
         </motion.div>
 
@@ -97,7 +98,7 @@ const Benefits = () => {
               <div className="absolute top-0 right-0 w-40 h-40 bg-yellow-100 blur-3xl opacity-0 group-hover:opacity-100 transition-all"></div>
 
               {/* Icon */}
-              <div className={`${item.bg} ${item.color} w-20 h-20 rounded-3xl flex items-center justify-center text-3xl  relative z-10`}>{item.icon}</div>
+              <div className={`${item.bg} ${item.color} w-20 h-20 rounded-3xl flex items-center justify-center text-3xl relative z-10`}>{item.icon}</div>
 
               {/* Title */}
               <h3 className="text-2xl font-black mt-8 relative z-10">{item.title}</h3>

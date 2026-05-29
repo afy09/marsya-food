@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { GiCorn } from "react-icons/gi";
+// import { GiCorn } from "react-icons/gi";
 
 const Hero = () => {
   return (
@@ -8,7 +8,7 @@ const Hero = () => {
       <div
         className="absolute inset-0 bg-cover bg-center"
         style={{
-          backgroundImage: "url('/images/bg-jagung.jpg')",
+          backgroundImage: "url('/images/food2.jpg')",
         }}
       />
 
@@ -25,50 +25,43 @@ const Hero = () => {
       <div className="relative z-10 max-w-5xl mx-auto px-6 text-center">
         {/* BADGE */}
         <motion.div initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
-          <span className="bg-yellow-400/20 backdrop-blur-md border border-yellow-300/30 text-yellow-300 px-6 py-3 rounded-full text-sm md:text-base font-semibold tracking-wide">Healthy Frozen Food</span>
+          <span className="bg-yellow-400/20 backdrop-blur-md border border-yellow-300/30 text-yellow-300 px-6 py-2 md:py-3 rounded-full text-sm md:text-base font-semibold tracking-wide">Distributor Makanan Berkualitas</span>
         </motion.div>
 
-        {/* <motion.img initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2, duration: 1 }} src="/images/thumbnail.png" alt="logo" className="w-32 h-32 md:w-40 md:h-40 mx-auto"></motion.img> */}
-        {/* TITLE */}
         {/* TITLE */}
         <motion.h1 initial={{ opacity: 0, y: 80 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2, duration: 1 }} className="mt-8 flex flex-col md:flex-row items-center justify-center text-center gap-2 md:gap-4 leading-tight">
           {/* TEXT */}
           <div className="flex flex-col md:flex-row items-center gap-2 md:gap-4">
-            <span className="text-5xl md:text-6xl font-black text-white">
-              Jagung
-              <span className="text-white"> Pipil</span>
+            <span className="text-4xl md:text-6xl font-black text-white">
+              PT Tiga
+              <span className="text-yellow-400"> Putra Permata </span>
             </span>
-
-            <div className="flex items-center gap-3">
-              <span className="text-5xl md:text-6xl font-black text-yellow-400">Premium</span>
-
-              <GiCorn className="text-yellow-400 text-5xl md:text-7xl drop-shadow-lg " />
-            </div>
           </div>
         </motion.h1>
+
         {/* DESCRIPTION */}
         <motion.p initial={{ opacity: 0, y: 80 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.4, duration: 1 }} className="text-white/80 text-base md:text-xl leading-relaxed mt-8 max-w-4xl mx-auto">
-          Jagung manis berkualitas premium, higienis, halal, dan siap disajikan untuk kebutuhan rumah tangga maupun bisnis kuliner modern.
+          PT Tiga Putra Permata merupakan perusahaan distributor makanan terpercaya yang menyediakan berbagai produk berkualitas tinggi untuk kebutuhan retail, horeca, dan bisnis kuliner.
         </motion.p>
+
         {/* BUTTON */}
         <motion.div initial={{ opacity: 0, y: 80 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.6, duration: 1 }} className="flex flex-col sm:flex-row items-center justify-center gap-5 mt-14">
-          {/* ORDER */}
+          {/* CONTACT */}
           <a
             href={`https://wa.me/6285775099079?text=${encodeURIComponent(
-              `Halo Admin Marsya 👋
+              `Halo PT Tiga Putra Permata 👋
 
-Saya ingin memesan produk Jagung Manis Pipil Marsya.
+Saya ingin mendapatkan informasi mengenai produk dan kerja sama distribusi makanan.
 
 Nama :
-Alamat :
-Produk :
-Jumlah :
+Perusahaan :
+Kebutuhan Produk :
 
 Terima kasih 🙌`
             )}`}
             target="_blank"
             rel="noopener noreferrer">
-            <button className="bg-yellow-400 hover:bg-yellow-500 text-black px-10 py-3 md:py-5 rounded-full font-bold text-base md:text-lg shadow-2xl hover:scale-105 transition-all duration-300">Order Sekarang</button>
+            <button className="bg-yellow-400 hover:bg-yellow-500 text-black px-10 py-3 md:py-5 rounded-full font-bold text-base md:text-lg shadow-2xl hover:scale-105 transition-all duration-300">Hubungi Kami</button>
           </a>
 
           {/* LEARN MORE */}

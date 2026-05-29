@@ -15,13 +15,20 @@ const Footer = () => {
         <div className="grid lg:grid-cols-4 gap-14">
           {/* BRAND */}
           <motion.div initial={{ opacity: 0, y: 80 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }} viewport={{ once: true }} className="lg:col-span-2">
-            <h2 className="text-5xl font-black leading-tight">
-              Marsya
-              <span className="text-yellow-400"> Healthy Food</span>
-            </h2>
+            <div className="flex items-center gap-4">
+              {/* LOGO */}
+              <img src="/images/logo.png" alt="PT Tiga Putra Permata" className="w-16 h-20 md:w-20 md:h-24 object-contain" />
+
+              {/* TEXT */}
+              <h2 className="text-3xl md:text-5xl font-black leading-tight">
+                PT Tiga Putra
+                <span className="text-gray-400"> Permata</span>
+              </h2>
+            </div>
 
             <p className="text-gray-400 leading-relaxed mt-8 text-lg max-w-xl">
-              PT Tiga Putra Permata menghadirkan Jagung Manis Pipil Marsya berkualitas premium dengan rasa alami, higienis, dan teknologi frozen modern untuk menjaga kesegaran terbaik.
+              PT Tiga Putra Permata merupakan perusahaan distribusi makanan terpercaya yang menyediakan berbagai produk frozen food dan bahan pangan berkualitas tinggi untuk kebutuhan retail, horeca, supermarket, dan bisnis kuliner modern
+              di Indonesia.
             </p>
 
             {/* SOCIAL */}
@@ -50,7 +57,7 @@ const Footer = () => {
               </a>
 
               <a href="#about" className="block text-gray-400 hover:text-yellow-400 transition-all">
-                Tentang
+                Tentang Kami
               </a>
 
               <a href="#product" className="block text-gray-400 hover:text-yellow-400 transition-all">
@@ -61,8 +68,8 @@ const Footer = () => {
                 Galeri
               </a>
 
-              <a href="#how-to-order" className="block text-gray-400 hover:text-yellow-400 transition-all">
-                Cara Order
+              <a href="#client" className="block text-gray-400 hover:text-yellow-400 transition-all">
+                Client
               </a>
             </div>
           </motion.div>
@@ -72,6 +79,7 @@ const Footer = () => {
             <h3 className="text-2xl font-black mb-8">Kontak</h3>
 
             <div className="space-y-6">
+              {/* PHONE */}
               <div className="flex items-start gap-4">
                 <div className="bg-yellow-400 text-black p-3 rounded-xl">
                   <FaPhoneAlt />
@@ -82,16 +90,18 @@ const Footer = () => {
                 </div>
               </div>
 
+              {/* EMAIL */}
               <div className="flex items-start gap-4">
                 <div className="bg-yellow-400 text-black p-3 rounded-xl">
                   <FaEnvelope />
                 </div>
 
                 <div>
-                  <p className="text-gray-400">marsyafood@gmail.com</p>
+                  <p className="text-gray-400">info@tigaputrapermata.com</p>
                 </div>
               </div>
 
+              {/* ADDRESS */}
               <div className="flex items-start gap-4">
                 <div className="bg-yellow-400 text-black p-3 rounded-xl">
                   <FaMapMarkerAlt />
@@ -100,6 +110,8 @@ const Footer = () => {
                 <div>
                   <p className="text-gray-400 leading-relaxed">
                     PT Tiga Putra Permata
+                    <br />
+                    Distributor Frozen Food & Food Supply
                     <br />
                     Indonesia
                   </p>
@@ -111,7 +123,7 @@ const Footer = () => {
 
         {/* BOTTOM */}
         <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ delay: 0.6, duration: 1 }} viewport={{ once: true }} className="border-t border-white/10 mt-20 pt-8 text-center">
-          <p className="text-gray-500">© {new Date().getFullYear()} Marsya Healthy Food — All Rights Reserved.</p>
+          <p className="text-gray-500">© {new Date().getFullYear()} PT Tiga Putra Permata — All Rights Reserved.</p>
         </motion.div>
       </div>
     </footer>
