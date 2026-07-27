@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-import { FaWhatsapp, FaInstagram, FaMapMarkerAlt, FaEnvelope, FaPhoneAlt } from "react-icons/fa";
+import { FaWhatsapp, FaInstagram, FaMapMarkerAlt, FaPhoneAlt } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -41,7 +41,10 @@ const Footer = () => {
                 <FaWhatsapp />
               </a>
 
-              <a href="/" className="bg-white/10 hover:bg-white/20 w-14 h-14 rounded-2xl flex items-center justify-center text-2xl transition-all hover:-translate-y-2">
+              <a
+                href="https://www.instagram.com/marsyahealthyfood?igsh=dDRudzJ0a2QwN2t2&utm_source=qr"
+                target="_blank"
+                className="bg-white/10 hover:bg-white/20 w-14 h-14 rounded-2xl flex items-center justify-center text-2xl transition-all hover:-translate-y-2">
                 <FaInstagram />
               </a>
             </div>
@@ -91,7 +94,7 @@ const Footer = () => {
               </div>
 
               {/* EMAIL */}
-              <div className="flex items-start gap-4">
+              {/* <div className="flex items-start gap-4">
                 <div className="bg-yellow-400 text-black p-3 rounded-xl">
                   <FaEnvelope />
                 </div>
@@ -99,7 +102,7 @@ const Footer = () => {
                 <div>
                   <p className="text-gray-400">info@tigaputrapermata.com</p>
                 </div>
-              </div>
+              </div> */}
 
               {/* ADDRESS */}
               <div className="flex items-start gap-4">

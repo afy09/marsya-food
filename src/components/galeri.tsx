@@ -15,11 +15,11 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 
 const galleryData = {
-  All: ["/images/galeri/galeri1.jpg", "/images/galeri/galeri2.jpg", "/images/galeri/galeri3.jpg", "/images/galeri/galeri4.jpg", "/images/galeri/galeri5.jpg"],
+  All: ["/images/galeri/galeri1.jpg", "/images/galeri/galeri2.jpg", "/images/galeri/galeri4.jpg", "/images/galeri/galeri5.jpg", "/images/galeri/galeri11.jpg"],
 
-  Produk: ["/images/galeri/galeri1.jpg", "/images/galeri/galeri2.jpg", "/images/galeri/galeri3.jpg", "/images/galeri/galeri4.jpg", "/images/galeri/galeri5.jpg"],
+  Produk: ["/images/galeri/galeri1.jpg", "/images/galeri/galeri2.jpg", "/images/galeri/galeri4.jpg", "/images/galeri/galeri5.jpg", "/images/galeri/galeri6.jpg", "/images/galeri/galeri7.jpg"],
 
-  Produksi: ["/images/galeri/galeri6.jpg", "/images/galeri/galeri7.jpg", "/images/galeri/galeri8.jpg"],
+  Produksi: ["/images/galeri/galeri11.jpg", "/images/galeri/galeri8.jpg"],
 
   Pengiriman: ["/images/galeri/galeri9.jpg", "/images/galeri/galeri10.jpg"],
 };

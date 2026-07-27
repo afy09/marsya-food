@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { FaTruck, FaBoxesStacked, FaAward, FaHandshake } from "react-icons/fa6";
+import { FaBoxesStacked, FaAward, FaHandshake } from "react-icons/fa6";
 
 const About = () => {
   return (
@@ -44,12 +44,6 @@ const About = () => {
               </div>
 
               <div className="bg-white shadow-xl rounded-3xl p-6 border border-yellow-100 hover:-translate-y-2 transition-all">
-                <h3 className="text-3xl font-black text-green-500">Fast</h3>
-
-                <p className="text-gray-600 mt-2">Distribution</p>
-              </div>
-
-              <div className="bg-white shadow-xl rounded-3xl p-6 border border-yellow-100 hover:-translate-y-2 transition-all">
                 <h3 className="text-3xl font-black text-orange-500">Trusted</h3>
 
                 <p className="text-gray-600 mt-2">Company</p>
@@ -73,19 +67,6 @@ const About = () => {
                     <h3 className="text-2xl font-bold">Quality Products</h3>
 
                     <p className="text-gray-600 mt-2 leading-relaxed">Menyediakan berbagai produk makanan berkualitas tinggi dengan standar distribusi terbaik.</p>
-                  </div>
-                </motion.div>
-
-                {/* ITEM 2 */}
-                <motion.div initial={{ opacity: 0, x: 50 }} whileInView={{ opacity: 1, x: 0 }} transition={{ delay: 0.5, duration: 0.7 }} viewport={{ once: true }} className="flex items-start gap-5">
-                  <div className="bg-blue-100 p-4 rounded-2xl text-blue-500 text-2xl">
-                    <FaTruck />
-                  </div>
-
-                  <div>
-                    <h3 className="text-2xl font-bold">Fast Distribution</h3>
-
-                    <p className="text-gray-600 mt-2 leading-relaxed">Sistem distribusi cepat dan tepat untuk memastikan produk sampai dalam kondisi terbaik.</p>
                   </div>
                 </motion.div>
 

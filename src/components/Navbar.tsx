@@ -55,10 +55,10 @@ const Navbar = () => {
       name: "Struktur Manajemen",
       path: "/management-structure",
     },
-    {
-      name: "Proposisi Perusahaan",
-      path: "/company-proposition",
-    },
+    // {
+    //   name: "Proposisi Perusahaan",
+    //   path: "/company-proposition",
+    // },
   ];
 
   return (
